@@ -9,61 +9,151 @@
 </head>
 
 <body>
-	    
-        <!-- Start of first page -->
-        <div data-role="page" id="foo">
-        
-            <div data-role="header">
-                <h1>Foo</h1>
-            </div><!-- /header -->
-        
-            <div role="main" class="ui-content">
-                <p>I'm first in the source order so I'm shown as the page.</p>           
-                <img src="images/movie.jpg"></img>
-                <p>View internal page called <a href="#bar">bar</a></p>
-                <p>View internal page called <a href="#thr">thr</a></p>
-            </div><!-- /content -->
-        
-            <div data-role="footer">
-                <h4>&copy; 2020 All rights revised.</h4>
-            </div><!-- /footer -->
-        </div><!-- /page -->
-        
-        <!-- Start of second page -->
-        <div data-role="page" id="bar">
-        
-            <div data-role="header">
-                <h1>Bar</h1>
-            </div><!-- /header -->
-        
-            <div role="main" class="ui-content">
-                <p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
-                <p><a href="#foo">Back to foo</a></p>
-                <p><a href="#thr">go to thr</a></p>
-            </div><!-- /content -->
-        
-            <div data-role="footer">
-                <h4>&copy; 2020 All rights revised.</h4>
-            </div><!-- /footer -->
-        </div><!-- /page -->
-        
-        <!-- Start of third page -->
-        <div data-role="page" id="thr">
-        
-            <div data-role="header">
-                <h1>thr</h1>
-            </div><!-- /header -->
-        
-            <div role="main" class="ui-content">
-                <p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
-                <p><a href="#foo">Back to foo</a></p>
-                <p><a href="#bar">Back to bar</a></p>
-            </div><!-- /content -->
-        
-            <div data-role="footer">
-                <h4>&copy; 2020 All rights revised.</h4>
-            </div><!-- /footer -->
-        </div><!-- /page -->
+    
+    <div data-role="page" id="menu">
+            
+        <div data-role="header">
+            <h1>Menu</h1>            
+        </div><!-- /header -->
+    
+        <div role="main" class="ui-content">
+            <div class="ui-grid-b">
+                <div class="ui-block-a" style="text-align: center;height:100%">
+                    <a href="number.html"  style="text-decoration:none;" data-transition="slidedown">
+                    <img src="images/number.png" />
+                    <p>Function A</p>
+                    </a>
+                </div>
+                <div class="ui-block-b" style="text-align: center;height:100%">
+                    <a href="#broom" style="text-decoration:none;" data-transition="slidedown">
+                    <img src="images/broom_code.png" />
+                    <p>Function B</p>
+                    </a>
+                </div>
+                <div class="ui-block-c" style="text-align: center;height:100%">
+                    <a href="#matrix" style="text-decoration:none;" data-transition="slidedown">
+                    <img src="images/matrix_code.png" />
+                    <p>Function C</p>
+                    </a>
+                </div>
+            </div>
+            <div class="ui-grid-b">
+                <div class="ui-block-a" style="text-align: center;height:100%">
+                    <a href="#script" style="text-decoration:none;" data-transition="slidedown">
+                    <img src="images/script_code.png" />
+                    <p>Function D</p>
+                    </a>
+                </div>
+                <div class="ui-block-b" style="text-align: center;height:100%">
+                    <a href="#source" style="text-decoration:none;" data-transition="slidedown">
+                    <img src="images/source_code_32.png" />
+                    <p>Function E</p>
+                    </a>
+                </div>
+                <div class="ui-block-c" style="text-align: center;height:100%">
+                    <a href="#stock" style="text-decoration:none;" data-transition="slidedown">
+                    <img src="images/stock_page_total_number.png" />
+                    <p>Function F</p>
+                    </a>
+                </div>
+            </div>
+        </div><!-- /content -->
+    
+        <div data-role="footer" data-position="fixed">
+            <h4>&copy; 2020 All rights revised.</h4>
+        </div><!-- /footer -->
+
+    </div>
+    
+    <div data-role="page" id="broom"><!-- broom page -->
+            
+        <div data-role="header">
+            <h1>broom</h1>
+            <a href="#menu" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-back" data-transition="slideup">Back</a>
+        </div><!-- /header -->
+    
+        <div role="main" class="ui-content">
+            <img src="images/broom_code.png" />
+            <a href="#menu" style="text-decoration:none;" data-transition="slideup">Menu</a>
+        </div><!-- /content -->
+    
+        <div data-role="footer" data-position="fixed">
+            <h4>&copy; 2020 All rights revised.</h4>
+        </div><!-- /footer -->
+
+    </div><!-- broom page -->
+
+    <div data-role="page" id="matrix"><!-- matrix page -->
+            
+        <div data-role="header">
+            <h1>matrix</h1>
+            <a href="#menu" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-back" data-transition="slideup">Back</a>
+        </div><!-- /header -->
+    
+        <div role="main" class="ui-content">
+            <img src="images/matrix_code.png" />
+            <a href="#menu" style="text-decoration:none;" data-transition="slideup">Menu</a>
+        </div><!-- /content -->
+    
+        <div data-role="footer" data-position="fixed">
+            <h4>&copy; 2020 All rights revised.</h4>
+        </div><!-- /footer -->
+
+    </div><!-- matrix page -->
+
+    <div data-role="page" id="script"><!-- script page -->
+            
+        <div data-role="header">
+            <h1>script</h1>
+            <a href="#menu" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-back" data-transition="slideup">Back</a>
+        </div><!-- /header -->
+    
+        <div role="main" class="ui-content">
+            <img src="images/script_code.png" />
+            <a href="#menu" style="text-decoration:none;" data-transition="slideup">Menu</a>
+        </div><!-- /content -->
+    
+        <div data-role="footer" data-position="fixed">
+            <h4>&copy; 2020 All rights revised.</h4>
+        </div><!-- /footer -->
+
+    </div><!-- script page -->
+
+    <div data-role="page" id="source"><!-- source page -->
+            
+        <div data-role="header">
+            <h1>source</h1>
+            <a href="#menu" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-back" data-transition="slideup">Back</a>
+        </div><!-- /header -->
+    
+        <div role="main" class="ui-content">
+            <img src="images/source_code_32.png" />
+            <a href="#menu" style="text-decoration:none;" data-transition="slideup">Menu</a>
+        </div><!-- /content -->
+    
+        <div data-role="footer" data-position="fixed">
+            <h4>&copy; 2020 All rights revised.</h4>
+        </div><!-- /footer -->
+
+    </div><!-- source page -->
+
+    <div data-role="page" id="stock"><!-- stock page -->
+            
+        <div data-role="header">
+            <h1>stock</h1>
+            <a href="#menu" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-back" data-transition="slideup">Back</a>
+        </div><!-- /header -->
+    
+        <div role="main" class="ui-content">
+            <img src="images/stock_page_total_number.png" />
+            <a href="#menu" style="text-decoration:none;" data-transition="slideup">Menu</a>
+        </div><!-- /content -->
+    
+        <div data-role="footer" data-position="fixed">
+            <h4>&copy; 2020 All rights revised.</h4>
+        </div><!-- /footer -->
+
+    </div><!-- stock page -->
 
 </body>
 </html>
